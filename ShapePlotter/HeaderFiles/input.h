@@ -3,14 +3,12 @@
 #include<vector>
 #include "point.h"
 
-using namespace std;
-
 class Input{
     public:
-    int ch;
-    int points_count;
-    double x,y,length,breadth,side,radius;
+    int ch=0;
+    int points_count=0;
+    double x=0,y=0,length=0,breadth=0,side=0,radius=0;
     Input();
-    int get_input(vector<double> &input_arr);
+    int get_input(std::vector<double> &input_arr);
     ~Input();
 };

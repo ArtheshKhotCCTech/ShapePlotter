@@ -8,13 +8,12 @@
 #include "line.h"
 #include "circle.h"
 #include "triangle.h"
-
-using namespace std;
+#include "polygon.h"
 
 class Communicator{
     public:
     Communicator();
-    void caller(int decision, vector<double> input_arr);
-    void outputwriter(string coordinates);
+    void caller(int decision, std::vector<double> input_arr);
+    void outputwriter(std::string coordinates);
     ~Communicator();
 };

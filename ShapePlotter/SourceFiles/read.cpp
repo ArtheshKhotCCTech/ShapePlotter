@@ -8,16 +8,16 @@ Read::~Read()
 {
 }
 
-void Read::read(string file_name)
+void Read::read(std::string file_name)
 {
-    ifstream myFile (file_name);
+    std::ifstream myFile (file_name);
     if(myFile.is_open()){
         while(getline(myFile, line)){
-            cout<<line<<endl;
+            std::cout<<line<<std::endl;
         }
         myFile.close();
     }
     else{
-        cout<<"Unable to open file";
+        std::cout<<"Unable to open file";
     }
 }

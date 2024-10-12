@@ -6,9 +6,9 @@
 
 class Line : public Shape{
     public :
-        string coordinates;
-        vector<double> input_arr;
-        Line(vector<double> input_arr1);
+        std::string coordinates;
+        std::vector<double> input_arr;
+        Line(std::vector<double> input_arr1);
         ~Line();
         void draw();
 };

@@ -5,13 +5,11 @@
 #include "communicator.h"
 #include <iostream>
 
-using namespace std;
-
 class Point : public Shape{
     public :
-        string coordinates;
-        vector<double> input_arr;
-        Point(vector<double> input_arr1);
+        std::string coordinates;
+        std::vector<double> input_arr;
+        Point(std::vector<double> input_arr1);
         ~Point();
         void draw();
 };

@@ -8,9 +8,9 @@ Write::~Write()
 {
 }
 
-void Write::writer(string output)
+void Write::writer(std::string output)
 {
-    ofstream myFile;
+    std::ofstream myFile;
     myFile.open("output.dat");
     myFile << output;
     myFile.close();

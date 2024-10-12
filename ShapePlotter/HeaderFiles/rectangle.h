@@ -5,13 +5,11 @@
 #include<string>
 #include "communicator.h"
 
-using namespace std;
-
 class Rectangle : public Shape{
     public :
-        string coordinates;
-        vector<double> input_arr;
-        Rectangle(vector<double> input_arr1);
+        std::string coordinates;
+        std::vector<double> input_arr;
+        Rectangle(std::vector<double> input_arr1);
         void draw();
         ~Rectangle();
 };

@@ -3,13 +3,11 @@
 #include<fstream>
 #include<iostream>
 
-using namespace std;
-
 class Read{
     public:
     Read();
     ~Read();
-        string line;
-        string file_name;
-        void read(string path);
+        std::string line;
+        std::string file_name;
+        void read(std::string path);
 };

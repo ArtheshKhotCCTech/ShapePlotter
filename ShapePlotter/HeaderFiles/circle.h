@@ -2,6 +2,7 @@
 #include "shape.h"
 #include "point.h"
 #include<iostream>
+#include<string>
 #include <vector>
 #include<math.h>
 #include "communicator.h"
@@ -10,10 +11,10 @@
 class Circle : public Shape{
     public:
         double radius;
-        string coordinates;
-        vector<double> input_arr;
-        vector<double> output_arr;
-        Circle(vector<double> input_arr1);
+        std::string coordinates;
+        std::vector<double> input_arr;
+        std::vector<double> output_arr;
+        Circle(std::vector<double> input_arr1);
         ~Circle();
         void draw();
 };

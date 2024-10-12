@@ -4,146 +4,137 @@ Input::Input()
 {
 }
 
-int Input::get_input(vector<double> &input_arr)
+int Input::get_input(std::vector<double> &input_arr)
 {
-    // cout<<"Enter 4 points :"<<endl;
-    // for(int i=0;i<4;i++){
-    //     cout<<"x : ";
-    //     cin>>x;
-    //     cout<<"y : ";
-    //     cin>>y;
-    //     points_input.push_back(x);
-    //     points_input.push_back(y);
-    // }
-    cout<<"Which shape do you want to draw? (Enter number 1-6)"<<endl
-        <<"1. Point"<<endl
-        <<"2. Line"<<endl
-        <<"3. Rectangle (4 points)"<<endl
-        <<"4. Rectangle (point and length, breadth)"<<endl
-        <<"5. Square (4 points)"<<endl
-        <<"6. Square (point and side)"<<endl
-        <<"7. Circle"<<endl
-        <<"8. Polygon"<<endl
-        <<"9. Triangle"<<endl;
-    cin>>ch;
+    std::cout<<"Which shape do you want to draw? (Enter number 1-6)"<< std::endl
+        <<"1. Point"<< std::endl
+        <<"2. Line"<< std::endl
+        <<"3. Rectangle (4 points)"<< std::endl
+        <<"4. Rectangle (point and length, breadth)"<< std::endl
+        <<"5. Square (4 points)"<< std::endl
+        <<"6. Square (point and side)"<< std::endl
+        <<"7. Circle"<< std::endl
+        <<"8. Polygon"<< std::endl
+        <<"9. Triangle"<< std::endl;
+    std::cin>>ch;
     switch (ch)
     {
 
     case 1:
-        cout<<"Enter Point Data :"<<endl;
-        cout<<"x : ";
-        cin>>x;
-        cout<<"y : ";
-        cin>>y;
+        std::cout<<"Enter Point Data :"<< std::endl;
+        std::cout<<"x : ";
+        std::cin>>x;
+        std::cout<<"y : ";
+        std::cin>>y;
         input_arr.push_back(x);
         input_arr.push_back(y);
         break;
 
     case 2:
-        cout<<"Enter Line Data :"<<endl;
+        std::cout<<"Enter Line Data :"<< std::endl;
         for(int i=0;i<2;i++){
-            cout<<"x : ";
-            cin>>x;
-            cout<<"y : ";
-            cin>>y;
+            std::cout<<"x : ";
+            std::cin>>x;
+            std::cout<<"y : ";
+            std::cin>>y;
             input_arr.push_back(x);
             input_arr.push_back(y);
         }
         break;
 
     case 3:
-        cout<<"Enter Rectangle Data :"<<endl;
+        std::cout<<"Enter Rectangle Data :"<< std::endl;
         for(int i=0;i<4;i++){
-            cout<<"x : ";
-            cin>>x;
-            cout<<"y : ";
-            cin>>y;
+            std::cout<<"x : ";
+            std::cin>>x;
+            std::cout<<"y : ";
+            std::cin>>y;
             input_arr.push_back(x);
             input_arr.push_back(y);
         }
         break;
     
     case 4:
-        cout<<"Enter Rectangle Data :"<<endl;
-        cout<<"x : ";
-        cin>>x;
-        cout<<"y : ";
-        cin>>y;
+        std::cout<<"Enter Rectangle Data :"<< std::endl;
+        std::cout<<"x : ";
+        std::cin>>x;
+        std::cout<<"y : ";
+        std::cin>>y;
         input_arr.push_back(x);
         input_arr.push_back(y);
-        cout<<"Length : ";
-        cin>>length;
-        cout<<"Breadth : ";
-        cin>>breadth;
+        std::cout<<"Length : ";
+        std::cin>>length;
+        std::cout<<"Breadth : ";
+        std::cin>>breadth;
         input_arr.push_back(length);
         input_arr.push_back(breadth);
         break;
 
     case 5:
-        cout<<"Enter Square Data :"<<endl;
+        std::cout<<"Enter Square Data :"<< std::endl;
         for(int i=0;i<4;i++){
-            cout<<"x : ";
-            cin>>x;
-            cout<<"y : ";
-            cin>>y;
+            std::cout<<"x : ";
+            std::cin>>x;
+            std::cout<<"y : ";
+            std::cin>>y;
             input_arr.push_back(x);
             input_arr.push_back(y);
         }
         break;
 
     case 6:
-        cout<<"Enter Square Data :"<<endl;
-        cout<<"x : ";
-        cin>>x;
-        cout<<"y : ";
-        cin>>y;
+        std::cout<<"Enter Square Data :"<< std::endl;
+        std::cout<<"x : ";
+        std::cin>>x;
+        std::cout<<"y : ";
+        std::cin>>y;
         input_arr.push_back(x);
         input_arr.push_back(y);
-        cout<<"Side : ";
-        cin>>side;
+        std::cout<<"Side : ";
+        std::cin>>side;
         input_arr.push_back(side);
         break;
 
     case 7:
-        cout<<"Enter Circle Data :"<<endl;
-        cout<<"x : ";
-        cin>>x;
-        cout<<"y : ";
-        cin>>y;
+        std::cout<<"Enter Circle Data :"<< std::endl;
+        std::cout<<"x : ";
+        std::cin>>x;
+        std::cout<<"y : ";
+        std::cin>>y;
         input_arr.push_back(x);
         input_arr.push_back(y);
-        cout<<"Radius : ";
-        cin>>radius;
+        std::cout<<"Radius : ";
+        std::cin>>radius;
         input_arr.push_back(radius);
         break;
 
     case 8:
-        cout<<"Enter number of points for the polygon data :"<<endl;
-        cin>>points_count;
+        std::cout<<"Enter number of points for the polygon data :"<< std::endl;
+        std::cin>>points_count;
         for(int i=0;i<points_count;i++){
-            cout<<"x : ";
-            cin>>x;
-            cout<<"y : ";
-            cin>>y;
+            std::cout<<"x : ";
+            std::cin>>x;
+            std::cout<<"y : ";
+            std::cin>>y;
             input_arr.push_back(x);
             input_arr.push_back(y);
         }
         break;
     
     case 9:
-        cout<<"Enter triangle data : "<<endl;
+        std::cout<<"Enter triangle data : "<< std::endl;
         for(int i=0;i<3;i++){
-            cout<<"x : ";
-            cin>>x;
-            cout<<"y : ";
-            cin>>y;
+            std::cout<<"x : ";
+            std::cin>>x;
+            std::cout<<"y : ";
+            std::cin>>y;
             input_arr.push_back(x);
             input_arr.push_back(y);
         }
         break;
 
     default:
-        cout<<"Enter a number between 1-6"<<endl;
+        std::cout<<"Enter a number between 1-6"<< std::endl;
         break;
     }
     return ch;

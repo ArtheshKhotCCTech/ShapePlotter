@@ -5,7 +5,7 @@ Communicator::Communicator()
     
 }
 
-void Communicator::caller(int decision, vector<double> input_arr)
+void Communicator::caller(int decision, std::vector<double> input_arr)
 {
     if(decision == 1 || decision == 7){
         Square s(input_arr);
@@ -31,9 +31,13 @@ void Communicator::caller(int decision, vector<double> input_arr)
         Triangle t(input_arr);
         t.draw();
     }
+    else if (decision == 9) {
+        Polygon p(input_arr);
+        p.draw();
+    }
 }
 
-void Communicator::outputwriter(string coordinates)
+void Communicator::outputwriter(std::string coordinates)
 {
     Write w;
     w.writer(coordinates);
